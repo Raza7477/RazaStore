@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raza Store</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <!-- font awesom cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- costom css file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<!-- header section starts -->
+<header class="header">
+    <a href="#" class="logo"><i class="fas fa-shopping-basket"> Raza Store</i></a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#products">Products</a>
+        <a href="#categories">Categories</a>
+        <a href="#review">Review</a>
+        <a href="#blogs">Bloggs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" class="box" placeholder="Search here">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <!-- <img src="https://th.bing.com/th/id/OIP.1hDsZ975J8uCnjifXnhN2gHaFy?pid=ImgDet&rs=1" alt=""> -->
+            <div class="content">
+                <h3>Eggs</h3>
+                <span class="price">$5/-</span>
+                <span class="quantity">Qty: 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <!-- <img src="milk.jpg" alt=""> -->
+            <div class="content">
+                <h3>Milk</h3>
+                <span class="price">$5/-</span>
+                <span class="quantity">Qty: 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <!-- <img src="onion.jpg" alt=""> -->
+            <div class="content">
+                <h3>Onion</h3>
+                <span class="price">$5/-</span>
+                <span class="quantity">Qty: 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <!-- <img src="salt.webp" alt=""> -->
+            <div class="content">
+                <h3>Salt</h3>
+                <span class="price">$5/-</span>
+                <span class="quantity">Qty: 1</span>
+            </div>
+        </div>
+
+        <div class="total"> Total : 20/-</div>
+        <a href="#" class="btn">Checkout</a>
+    </div>
+
+    <form action="" class="login-form">
+        <h3>LogIn Now</h3>
+        <input type="email" class="box" placeholder="Enter Email" required>
+        <input type="password" class="box" placeholder="Enter Password" required>
+        <p>Forget Password <a href="#">Click Here</a></p>
+        <p>Don't Have An Account <a href="#">Create Now</a></p>
+        <input type="submit" value="log in now" class="btn">
+    </form>
+
+</header>
+<!-- header section ends -->
+
+<!-- home section starts -->
+<section class="home" id="home">
+    <div class="content">
+        <h3>Fresh and <span>organic</span> products for you</h3>
+        <p>Discover a world of exceptional flavors and nourishment with our extraordinary range of unique, fresh, and organic products. From rare heirloom varieties to sustainably sourced ingredients, we handpick each item to elevate your culinary adventures and promote a healthier lifestyle. Embrace the extraordinary at Raza Store.</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </div>
+</section>
+<!-- home section ends -->
+
+<!-- features section starts -->
+<section class="features" id="features">
+   <h1 class="heading"> Our <span>Features</span></h1>
+
+   <div class="box-container">
+    <div class="box">
+        <img src="fresh & organic.png" alt="">
+        <h3>Fresh and Organic</h3>
+        <p>Indulge in the goodness of nature with our exquisite selection of fresh and organic products, carefully curated to nourish your body and mind. Experience the pure flavors and benefits of nature's bounty, while supporting sustainable practices that prioritize your health and the environment.</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="box">
+        <img src="free delivery.jpg" alt="">
+        <h3>Free Delivery</h3>
+        <p>Enjoy the convenience of free delivery, making your online shopping experience even more delightful. Say goodbye to extra fees and embrace the ease of having your desired items delivered right to your doorstep, hassle-free. Shop without worries and let us handle the shipping for you.</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="box">
+        <img src="easy payment.png" alt="">
+        <h3>Easy Payments</h3>
+        <p>Experience hassle-free and easy payment options that simplify your shopping journey. Whether it's through secure online transactions, flexible payment plans, or convenient digital wallets, enjoy a seamless checkout process that ensures your satisfaction and peace of mind. Shop with confidence</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+   </div>
+</section>
+<!-- features section ends -->
+
+<!-- product section starts -->
+<section class="products" id="products">
+    <div id="vegs">
+    <h1 class="heading"> Our <span> Products </span></h1>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="fresh cabbage.jpg" alt="">
+                <h3>Fresh Cabbage</h3>
+                <div class="price"> $1/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="OrderForm.html" class="btn">Place Order</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="fresh onion.jpg" alt="">
+                <h3>Fresh Onion</h3>
+                <div class="price"> $1.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="OrderForm.html" class="btn">Place Order</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="Fresh tomato.jpg" alt="">
+                <h3>Fresh Tomato</h3>
+                <div class="price"> $2.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="OrderForm.html" class="btn">Place Order</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="fresh potato.jpg" alt="">
+                <h3>Fresh Potato</h3>
+                <div class="price"> $1/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="OrderForm.html" class="btn">Place Order</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="fresh carrot.jpeg" alt="">
+                <h3>Fresh Carrot</h3>
+                <div class="price"> $1/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="OrderForm.html" class="btn">Place Order</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="fresh avogado.webp" alt="">
+                <h3>Avocado</h3>
+                <div class="price"> $1/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="OrderForm.html" class="btn">Place Order</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="fruits">
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="mango.jpg" alt="">
+                <h3>Mango</h3>
+                <div class="price"> $1/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="OrderForm.html" class="btn">Place Order</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="banana.jpg" alt="">
+                <h3>Fresh Banana</h3>
+                <div class="price"> $1/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="OrderForm.html" class="btn">Place Order</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="apples.jpg" alt="">
+                <h3>Fresh Apple's</h3>
+                <div class="price"> $1/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="OrderForm.html" class="btn">Place Order</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="orange,s.jpg" alt="">
+                <h3>Fresh Orange's</h3>
+                <div class="price"> $1/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="OrderForm.html" class="btn">Place Order</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="meat">
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="chicken.jpg" alt="">
+                <h3>Chicken</h3>
+                <div class="price"> $1/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="OrderForm.html" class="btn">Place Order</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="cow meat.jpg" alt="">
+                <h3>Beef</h3>
+                <div class="price"> $1.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="OrderForm.html" class="btn">Place Order</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="got meat.jpg" alt="">
+                <h3>Chevon</h3>
+                <div class="price"> $2.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="OrderForm.html" class="btn">Place Order</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="fish.jpg" alt="">
+                <h3>Fish</h3>
+                <div class="price"> $1/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="OrderForm.html" class="btn">Place Order</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="dairy">
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="milk.jpg" alt="">
+                <h3>Milk</h3>
+                <div class="price"> $1/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="OrderForm.html" class="btn">Place Order</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="butter img.jpg" alt="">
+                <h3>Butter</h3>
+                <div class="price"> $1/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="OrderForm.html" class="btn">Place Order</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="paneer img.webp" alt="">
+                <h3>Paneer</h3>
+                <div class="price"> $1/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="OrderForm.html" class="btn">Place Order</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="dahi.jpg" alt="">
+                <h3>Dahi</h3>
+                <div class="price"> $1/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="OrderForm.html" class="btn">Place Order</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</section>
+<!-- product section ends -->
+
+<!-- caragories section starts -->
+<section class="categories" id="categories">
+    <h1 class="heading"> Product <span>Categories</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="vegitable image.jpeg" alt="">
+            <h3>Vegitables</h3>
+            <p>Upto 65% off</p>
+            <a href="#vegs" class="btn">Shop Now</a>
+        </div>
+
+        <div class="box">
+            <img src="fresh fruits image.jpg" alt="">
+            <h3>Fresh Fruits</h3>
+            <p>Upto 75% off</p>
+            <a href="#fruits" class="btn">Shop Now</a>
+        </div>
+
+        <div class="box">
+            <img src="fresh meat image.png" alt="">
+            <h3>Fresh Meat</h3>
+            <p>Upto 55% off</p>
+            <a href="#meat" class="btn">Shop Now</a>
+        </div>
+
+        <div class="box">
+            <img src="fresh dairy.jpg" alt="">
+            <h3>Fresh Dairy Products</h3>
+            <p>Upto 35% off</p>
+            <a href="#dairy" class="btn">Shop Now</a>
+        </div>
+    </div>
+</section>
+<!-- caragories section endss -->
+
+<!-- reviews section starts -->
+<section class="review" id="review">
+    <h1 class="heading"> Customer's <span>Reviews</span></h1>
+    <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="sagar.jpg" alt="">
+                <p>Excellent food service with prompt and friendly staff, ensuring a delightful dining experience.</p>
+                <h3>Sagar Kumar</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="akmal raja.jpg" alt="">
+                <p>Excellent food service with prompt and friendly staff, ensuring a delightful dining experience.</p>
+                <h3>Akmal Raja</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="tahsin raja.jpg" alt="">
+                <p>Excellent food service with prompt and friendly staff, ensuring a delightful dining experience.</p>
+                <h3>Tahsin Raja</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="razzaque.jpg" alt="">
+                <p>A shopping haven that transcends expectations, offering an unparalleled selection of treasures that cater to every desire and inspire endless possibilities.</p>
+                <h3>Abdul Razzaque</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="piyush.jpg" alt="">
+                <p>A hidden gem where quality meets affordability, providing a delightful shopping experience unlike any other.</p>
+                <h3>Piyush Kumar</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="safikul.jpg" alt="">
+                <p>An enchanting emporium where dreams come to life, showcasing an exquisite tapestry of products that ignite imagination and captivate the senses.</p>
+                <h3>Safikul Alam</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- reviews section ends -->
+
+<!-- blogs section starts -->
+<section class="blogs" id="blogs">
+    <h1 class="heading"> Our <span>Blogs</span></h1>
+    <div class="box-container">
+        <div class="box">
+           <img src="akmal raja.jpg" alt=""> 
+           <div class="content">
+            <div class="icons">
+                <a href="#"><i class="fas fa-user"></i> By User </a>
+                <a href="#"><i class="fas fa-calendar"></i> 1st july 2023 </a>
+            </div>
+            <h3>Freshh and Organic Vegitables and Fruits</h3>
+            <p>Embark on a global culinary adventure, uncovering street food, fine dining, fusion cuisine, and hidden gems, igniting your taste buds with unforgettable flavors.</p>
+            <a href="#" class="btn">Read More</a>
+           </div>
+        </div>
+
+        <div class="box">
+            <img src="tahsin raja.jpg" alt=""> 
+            <div class="content">
+             <div class="icons">
+                 <a href="#"><i class="fas fa-user"></i> By User </a>
+                 <a href="#"><i class="fas fa-calendar"></i> 1st july 2023 </a>
+             </div>
+             <h3>Freshh and Organic Vegitables and Fruits</h3>
+             <p>Discover a symphony of flavors, as this food blog takes you on a journey through local delicacies, international cuisines, and culinary marvels, leaving you craving for more.</p>
+             <a href="#" class="btn">Read More</a>
+            </div>
+         </div>
+
+         <div class="box">
+            <img src="sagar.jpg" alt=""> 
+            <div class="content">
+             <div class="icons">
+                 <a href="#"><i class="fas fa-user"></i> By User </a>
+                 <a href="#"><i class="fas fa-calendar"></i>1st july 2023</a>
+             </div>
+             <h3>Freshh and Organic Vegitables and Fruits</h3>
+             <p>Indulge in a captivating culinary escapade, where delectable dishes, alluring aromas, and impeccable presentation come together to create an irresistibly attractive dining experience.</p>
+             <a href="#" class="btn">Read More</a>
+            </div>
+         </div>
+
+         <div class="box">
+            <img src="razzaque.jpg" alt=""> 
+            <div class="content">
+             <div class="icons">
+                 <a href="#"><i class="fas fa-user"></i> By User </a>
+                 <a href="#"><i class="fas fa-calendar"></i>1st july 2023</a>
+             </div>
+             <h3>Freshh and Organic Vegitables and Fruits</h3>
+             <p>Embark on a tantalizing expedition as this food blog unravels a tapestry of culinary wonders, weaving together unique flavors and captivating presentations that will leave you spellbound.</p>
+             <a href="#" class="btn">Read More</a>
+            </div>
+         </div>
+
+         <div class="box">
+            <img src="md raza.jpg" alt=""> 
+            <div class="content">
+             <div class="icons">
+                 <a href="#"><i class="fas fa-user"></i> By User </a>
+                 <a href="#"><i class="fas fa-calendar"></i>1st july 2023</a>
+             </div>
+             <h3>Freshh and Organic Vegitables and Fruits</h3>
+             <p>Embark on an enticing gastronomic journey, as this food blog unveils a world of delectable surprises, where every bite is an invitation to savor the extraordinary.</p>
+             <a href="#" class="btn">Read More</a>
+            </div>
+         </div>
+
+         <div class="box">
+            <img src="piyush.jpg" alt=""> 
+            <div class="content">
+             <div class="icons">
+                 <a href="#"><i class="fas fa-user"></i> By User </a>
+                 <a href="#"><i class="fas fa-calendar"></i>1st july 2023</a>
+             </div>
+             <h3>Freshh and Organic Vegitables and Fruits</h3>
+             <p>Indulge in a captivating culinary escapade, where delectable dishes, alluring aromas, and impeccable presentation come together to create an irresistibly attractive dining experience.</p>
+             <a href="#" class="btn">Read More</a>
+            </div>
+         </div>
+
+         <div class="box">
+            <img src="bilal.jpg" alt=""> 
+            <div class="content">
+             <div class="icons">
+                 <a href="#"><i class="fas fa-user"></i> By User </a>
+                 <a href="#"><i class="fas fa-calendar"></i>1st july 2023</a>
+             </div>
+             <h3>Freshh and Organic Vegitables and Fruits</h3>
+             <p>Discover the ultimate shopping experience at our store! From trendy fashion to cutting-edge electronics, we have it all. With friendly staff, competitive prices, and a wide selection, we're your one-stop destination for all your shopping needs. Visit us today and indulge in retail bliss!</p>
+             <a href="#" class="btn">Read More</a>
+            </div>
+         </div>
+    </div>
+</section>
+<!-- blogs section endss -->
+
+<!-- footer section starts -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3> Raza Store <i class="fas fa-shopping-basket"></i></h3>
+            <p>Join our vibrant social media community to engage with like-minded individuals, share your thoughts, and be part of the conversation.</p>
+            <div class="share">
+                <a href="https://www.facebook.com/profile.php?id=100091628866600&mibextid=ZbWKwL" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/MdRaza01?t=u8k6q9szECKCwtzOcXmxOg&s=09" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/ig_muhammad_raza/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/md-raza01" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="tel:+917477650108" class="links"><i class="fas fa-phone"></i>+91-7477650108</a>
+            <a href="tel:+917602897295" class="links"><i class="fas fa-phone"></i>+91-7602097295</a>
+            <a href="mailto:mdraza83@gmail.com" class="links"><i class="fas fa-envelope"></i>mdraza8397@gmail.com</a>
+            <a href="https://maps.app.goo.gl/Grorvg6SBLjmhcxt6" class="links"><i class="fas fa-map-marker-alt"></i>West Bengal, India - 733202</a>
+        </div>
+
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="#home" class="links"><i class="fas fa-arrow-right"></i> Home </a>
+            <a href="#features" class="links"><i class="fas fa-arrow-right"></i> Features </a>
+            <a href="#products" class="links"><i class="fas fa-arrow-right"></i> Products </a>
+            <a href="#categories" class="links"><i class="fas fa-arrow-right"></i> Categories </a>
+            <a href="#reviews" class="links"><i class="fas fa-arrow-right"></i> Reviews </a>
+            <a href="#blogs" class="links"><i class="fas fa-arrow-right"></i> Blogs </a>
+        </div>
+
+        <div class="box">
+            <h3>NewsLatter</h3>
+            <p>Subscribe for latest updates</p>
+            <input type="email" placeholder="Your Email" class="email" required>
+            <input type="submit" value="Subscribe" class="btn">
+            <a href="#home"><img src="credit cards.jpg" alt="" class="payment-img"></a>
+        </div>
+    </div>
+
+    <div class="credit"> Copyright © 2023 Created by <span><a href="https://www.linkedin.com/in/md-raza01"> Md Raza </a></span> | All rights reserved</div>
+
+</section>
+<!-- footer section ends -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<!-- costom js file link -->
+    <script src="index.js"></script>
+</body>
+</html>
